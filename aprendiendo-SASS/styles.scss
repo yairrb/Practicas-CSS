@@ -1,0 +1,4 @@
+//modulos: para que sass no compile un modulo por separdo debemos indicarlo en el nombre del mismo.
+//comenzando su nombre con un '_' .
+@use 'base.scss';
+@use 'encabezado.scss';

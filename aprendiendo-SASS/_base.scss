@@ -1,0 +1,111 @@
+
+//variables
+$fuente-tipica: Helvetica, Arial;
+$color-fondo: #ccc;
+$color-letra: red;
+
+
+
+//uso de variables
+body{
+    background-color: $color-fondo;
+}
+h1{
+    color: $color-letra;
+    font-family: $fuente-tipica;
+}
+
+.caja{
+
+    border: 1px solid black;
+    width: 500px;
+    margin: 0px auto;
+    text-align: center;
+    background-color: white;
+    h1{
+        color: blue;
+    }
+    
+    p{
+        color: green;
+    }
+    //anidaciones
+    .info{
+        font-size: 10px;
+
+        .autor{
+            font-size: 15px;
+            color: green;
+            padding: 10px;
+            margin: 5px auto;
+        }
+    }
+}
+
+//mixins / funciones
+
+@mixin crearBordes($color, $size , $shadow) {
+    border: $size solid $color;
+    border-radius: $size;
+    box-shadow: 0px 0px 5px $shadow;
+    
+}
+
+.caja{
+    @include crearBordes(red, 10px, black);
+}
+
+.listado{
+    @include crearBordes(green, 15px, gray);
+}
+
+// herencia
+
+%alert-normal {
+    border: 1px solid gray;
+    color: white;
+    background: #ccc;
+    padding: 10px;
+    width: 100%;
+}
+
+.alert{
+    @extend %alert-normal;
+}
+
+//operadores
+/*
+el truco de los operadores es poder definir en variables los valores deseados como de una caja y del wrap
+que los contine y luego obenter un porcentaje
+
+Por ejemplo: width: $wrap /$caja * 100%
+asi conseguimos valores relativos
+*/
+h1{
+    font-size: 20px + 25px;
+    //condicionales
+    
+    @if $color-fondo == #ccc {
+        color: black;   
+    }@else if $color-fondo == black{
+        color: lightblue;
+    } @else{
+        color: yellow;
+    }
+}
+
+
+//for
+
+$contador: 1;
+
+@for $contador from 1 to 4{
+    .listado ul li:nth-child(#{$contador}){
+        color: orange;
+    }
+    
+}
+
+//while
+
+//each

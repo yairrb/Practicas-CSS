@@ -1,0 +1,20 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#caja1, #caja2{
+    width: 250px;
+    height: 250px;
+    background-color: lightblue;
+    border: 10px solid red;
+    margin: 15px 15px 15px 15px;
+    padding: 20px;
+}
+p{
+    font-style: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 230px;
+}

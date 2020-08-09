@@ -1,0 +1,30 @@
+
+@font-face {
+    font-family: Yanone;
+    src: url("fonts/static/YanoneKaffeesatz-Light.ttf");
+}
+
+/* trabajo con colores
+
+    colores del sistema
+    colores hexagesimales
+    colores RGB
+    colores RGBA
+*/
+h1{
+    font-family: Yanone;
+    font-style: oblique;
+}
+
+h3{
+    font-family: "Comic sans MS";
+    font-size: 25px;
+    font-weight: lighter;
+    color: olive;
+}
+
+p {
+    font-family: sans-serif ;
+    font-size: 18px;
+    font-weight: 600;
+}
