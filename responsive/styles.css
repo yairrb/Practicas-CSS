@@ -1,0 +1,76 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#container{
+    width: 80%;
+    background: red;
+    margin: 0px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.clear-fix{
+    float: none;
+    clear: both;
+}
+
+header{
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+    background: lightskyblue;
+    color: #333333;
+    text-align: center;
+}
+
+aside {
+     width: 25%;
+     float: left;
+     min-height: 700px;
+     background: #cccccc;
+}
+
+#articles{
+    width: 75%;
+    float: left;
+    min-height: 700px;
+    background-color: lemonchiffon;
+}
+
+#articles article{
+    width: 30%;
+    height: 150px;
+    background: green;
+    color: white;
+    line-height: 150px;
+    border: 2px solid white;
+    text-align: center;
+    float: left;
+    margin: 10px
+}
+
+/* RESPONSIVE */
+
+/* desde el ancho 0 px hasta el ancho 888px habra los estilos de abajo*/
+@media (max-width: 888px){
+
+
+    #articles article {
+
+        width: 50%;
+        background: red;
+    }
+
+}
+
+@media (max-width: 632px){
+    #articles article {
+
+        width: 90%;
+        background: blue;
+    }
+}

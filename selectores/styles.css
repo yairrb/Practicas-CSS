@@ -1,0 +1,106 @@
+/*
+
+###### SELECTOR UNIVERSAL #######
+*/
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*
+##### SELECTOR DE ETIQUETA ###
+*/
+h1 {
+    background: red;
+    color: white;
+    padding: 10px;
+}
+a{
+    font-size: 18px;
+    color: green;
+    text-decoration: none;
+}
+
+footer a {
+    color: red;
+
+}
+
+/*
+#### SELECTOR DE ID ####
+*/
+#descripcion{
+    border: 5px solid black;
+    padding: 14px;
+}
+#titulo{
+    background: blue;
+    border: 2px dashed white;
+}
+ /*
+##### SELECTOR DE CLASE ####
+ */
+ .parrafo{
+     font-style: italic;
+     text-decoration: underline;
+     font-weight: bold;
+ }
+ .parrafo1, .parrafo3{
+     background-color: green;
+ }
+ .parrafo3{
+
+    color: white;
+ }
+
+ /*
+ ### SELECTORES DE ATRIBUTOS ###
+ */
+
+ #usuario form{
+     border: 5px solid blue;
+     margin-top: 15px;
+     margin-bottom: 15px;
+ }
+
+
+ #usuario form * {
+     display: block;
+ }
+     
+ input[type="text"] {
+     margin-bottom: 15px;
+     padding: 10px;
+     margin-left: 5px;
+     width: 200px;
+ }
+ input[type="submit"]{
+     background: green;
+     color: white;
+     padding: 15px;
+     font-size: 17px;
+     margin-left: 15px;
+     text-transform: uppercase;
+     border: 1px soldi black;
+     cursor: pointer;
+ }
+
+
+ /* #### SELECTOR HIJO #####*/
+
+ #menu > li > a{
+
+    font-size: 18px;
+    color: red;
+    text-decoration: none;
+ }
+
+
+ /*   proridad*/
+
+ #saludo h1{
+background: brown;
+ }
+
+ h1 {
+     background: purple !important;
+ }

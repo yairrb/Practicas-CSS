@@ -1,0 +1,54 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li{
+    font-size: 20px;
+}
+
+ul li:first-child {
+    color: purple;
+    font-weight: bold;
+
+}
+
+ul li:nth-child(2){
+    color: yellow;
+    font-weight: bold;
+
+}
+
+ul li:last-child{
+    color: gray;
+    font-weight: bold;
+}
+#mienlace {
+    font-size: 30px;
+    color: lightcoral;
+}
+
+#mienlace:link{
+    color: red;
+}
+
+#mienlace:visited{
+    color: blue;
+}
+
+#mienlace:hover{
+    color: green;
+}
+
+#mienlace:active{
+    color: purple;
+    text-shadow: 0px 0px 5px purple;
+}
+
+input[type="text"]{
+    margin-top: 20px;
+    page-break-inside: 20px;
+}
+
+input[type="text"]:focus{
+    border: 4px  dashed red;
+}
