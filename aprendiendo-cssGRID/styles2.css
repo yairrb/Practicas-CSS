@@ -1,0 +1,66 @@
+
+body{
+    text-align: center;
+}
+
+
+.website{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 150px 70px 1fr 70px;
+
+    height: 1000px;
+    width: 90%;
+    margin: 0px auto;
+    border: 1px solid #ccc;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1 / 6;
+    background: blue;
+    color: white;
+}
+#header h1 {
+    display: flex;
+    align-self: center;
+}
+
+#menu{
+    grid-column: 1 / 6;
+    background: lightblue;
+    color: black;
+    line-height: 70px;
+}
+
+#menu ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+}
+
+#content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 1 / 5;
+    background: #eee;
+}
+
+#content article{
+    background: #ccc;
+    border: 1px solid #555;
+}
+
+#lateral{
+    grid-column: 5 / 6;
+    background: orange;
+    color: white;
+}
+
+#footer{
+    grid-column: 1 / 6;
+    background: black;
+    color: white;
+}
